@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/fontello.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic,greek" rel="stylesheet">
+  <title>CodeJam - Animation player</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a class="link" href="#"><i class="icon-menu"></i></a>
+      <h1>CodeJam - Animation player</h1>
+      <a class="link" href="#"><i class="icon-ellipsis-vert"></i></a>
+    </header>
+    <main class="main">
+      <section class="left">
+        <div class="left-first">
+          <button id="bucket" class="btn" type="button"><span><i class="icon-bucket"></i>Paint bucket</span></button>
+          <button id="eyedropper" class="btn" type="button"><span><i class="icon-eyedropper"></i>Choose
+              color</span></button>
+        </div>
+        <div class="left-second">
+          <div class="color-info">
+            <span>Current color:</span>
+            <div id="current" class="current-color"></div>
+          </div>
+          <div class="color-info">
+            <span>Previous color:</span>
+            <div id="prev" class="prev-color"></div>
+          </div>
+          <div class="colors">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </section>
+      <section class="center">
+        <div class="frame-elements-container">
+        </div>
+        <button id="newFrameButton" class="btn" type="button"><span><i class="icon-plus"></i>Add new
+            Frame</span></button>
+      </section>
+      <section class="right">
+        <div class="work-area">
+
+        </div>
+
+      </section>
+      <section class="right2" id="r2">
+        <div class="preview-area">
+          <div class="grid"></div>
+          <div class="full-screen-button">
+            <i class="icon-move"></i>
+          </div>
+        </div>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="24" value="6" class="slider" id="myRange">
+        </div>
+        <div class="slider-out">
+          <span id="output"></span>
+        </div>
+  </div>
+
+  </section>
+  </main>
+  </div>
+  <script type="module" src="assets/js/index.js"></script>
+</body>
+
+</html>
